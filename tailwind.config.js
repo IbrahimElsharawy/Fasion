@@ -5,10 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {
-        
-      },
+      backgroundColor: {
+        'custom-color': '#E65540',
     },
   },
+},
   plugins: [],
 }
