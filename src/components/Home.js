@@ -1,6 +1,7 @@
 import React from "react";
 import cover from "../assets/cover.jpg";
 import { NavLink } from "react-router-dom";
+import Products from "./products";
 
 const Home = () => {
   const containerStyle = {
@@ -11,19 +12,31 @@ const Home = () => {
   };
 
   return (
-    <div
-      className="w-full h-[600px] relative text-white "
-      style={containerStyle}
-    >
+    <div>
       <div
-        className="w-full h-full relative z-10"
-        style={{ backgroundColor: "rgba(0,0,0,.4)" }}
+        className="w-full h-[600px] relative text-white "
+        style={containerStyle}
       >
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center">
-          <p className="capitalize tracking-wider">woman collection 2023</p>
-          <h1 className="my-8 text-2xl md:text-5xl font-bold uppercase ">new arrivals</h1>
-          <NavLink className="border py-2 px-4 rounded-3xl	uppercase transition-all duration-300 hover:bg-custom-color hover:text-white"  to="/">Shop now</NavLink>
+        <div
+          className="w-full h-full relative z-10"
+          style={{ backgroundColor: "rgba(0,0,0,.4)" }}
+        >
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center">
+            <p className="capitalize tracking-wider">woman collection 2023</p>
+            <h1 className="my-8 text-2xl md:text-5xl font-bold uppercase ">
+              new arrivals
+            </h1>
+            <NavLink
+              className="border py-2 px-4 rounded-3xl	uppercase transition-all duration-300 hover:bg-custom-color hover:text-white"
+              to="/"
+            >
+              Shop now
+            </NavLink>
+          </div>
         </div>
+      </div>
+      <div>
+        <Products />
       </div>
     </div>
   );

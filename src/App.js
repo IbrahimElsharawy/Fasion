@@ -7,6 +7,7 @@ import Features from "./components/Features";
 import Blog from "./components/Blog";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Products from "./components/products";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route  path="/blog" element={<Blog/>}/>
         <Route  path="/about" element={ <About/> }/>
         <Route  path="/contact" element={ <Contact/> }/>
+        <Route  path="/contact" element={ <Contact/> }/>
+
       </Routes>
     </div>
      

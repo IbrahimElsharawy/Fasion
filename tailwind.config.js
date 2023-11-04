@@ -8,6 +8,10 @@ module.exports = {
       backgroundColor: {
         'custom-color': '#E65540',
     },
+    textColor:{
+      'custom-text-color': '#E65540',
+
+    }
   },
 },
   plugins: [],

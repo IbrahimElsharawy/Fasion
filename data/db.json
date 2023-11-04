@@ -1,0 +1,53 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Designer Bag",
+        "category": "Bags",
+        "description": "A high-end designer bag for fashion enthusiasts.",
+        "price": 199.99,
+        "image": "https://images.unsplash.com/photo-1609172795052-05bf80681031?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": 2,
+        "name": "Elegant Watch",
+        "category": "Watches",
+        "description": "A sophisticated watch to complement your style.",
+        "price": 149.99,
+        "image": "https://images.unsplash.com/photo-1604242692760-2f7b0c26856d?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": 3,
+        "name": "Stylish Sunglasses",
+        "category": "Sunglasses",
+        "description": "Fashionable sunglasses to protect your eyes in style.",
+        "price": 59.99,
+        "image": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": 4,
+        "name": "Comfortable Footwear",
+        "category": "Footwear",
+        "description": "Quality footwear for maximum comfort.",
+        "price": 89.99,
+        "image": "https://images.unsplash.com/photo-1610398752800-146f269dfcc8?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": 5,
+        "name": "Chic Dress",
+        "category": "Dresses",
+        "description": "A chic and trendy dress for any occasion.",
+        "price": 69.99,
+        "image": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": 6,
+        "name": "Fashionable Hat",
+        "category": "Hat",
+        "description": "A stylish hat to complete your fashion look.",
+        "price": 39.99,
+        "image": "https://plus.unsplash.com/premium_photo-1675989087109-f8a00bfea7d1?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  }
+  
