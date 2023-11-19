@@ -7,12 +7,17 @@ module.exports = {
     extend: {
       backgroundColor: {
         'custom-color': '#E65540',
-    },
-    textColor:{
-      'custom-text-color': '#E65540',
+        'second-color':'#F2F2F2'
+      },
+      textColor: {
+        'custom-text-color': '#E65540',
 
-    }
+        'second-text-color':'#999999'
+      },
+      borderColor: {
+        'custom-border-color': '#DBDBDB', 
+      },
+    },
   },
-},
   plugins: [],
-}
+};

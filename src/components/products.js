@@ -11,7 +11,7 @@ const Products = () => {
     const getProducts = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:4000/products");
+        const response = await fetch("http://localhost:5000/products");
         if (response.ok) {
           const data = await response.json();
           setData(data);

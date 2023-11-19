@@ -2,13 +2,14 @@ import React from "react";
 import cover from "../assets/cover.jpg";
 import { NavLink } from "react-router-dom";
 import Products from "./products";
+import LookBook from "./LookBook";
 
 const Home = () => {
   const containerStyle = {
     backgroundImage: `url(${cover})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    backgroundAttachment: "fixe",
+    backgroundAttachment: "fixed",
   };
 
   return (
@@ -38,6 +39,11 @@ const Home = () => {
       <div>
         <Products />
       </div>
+
+      <div>
+      <LookBook/>
+      </div>
+
     </div>
   );
 };
