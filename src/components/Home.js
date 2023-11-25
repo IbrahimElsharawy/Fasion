@@ -3,6 +3,7 @@ import cover from "../assets/cover.jpg";
 import { NavLink } from "react-router-dom";
 import Products from "./products";
 import LookBook from "./LookBook";
+import FeaturedProducts from "./FeaturedProducts";
 
 const Home = () => {
   const containerStyle = {
@@ -24,7 +25,7 @@ const Home = () => {
         >
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center">
             <p className="capitalize tracking-wider">woman collection 2023</p>
-            <h1 className="my-8 text-2xl md:text-5xl font-bold uppercase ">
+            <h1 className="my-8 text-2xl md:text-4xl font-bold uppercase ">
               new arrivals
             </h1>
             <NavLink
@@ -39,11 +40,12 @@ const Home = () => {
       <div>
         <Products />
       </div>
-
       <div>
-      <LookBook/>
+        <FeaturedProducts />
       </div>
-
+      <div>
+        <LookBook />
+      </div>
     </div>
   );
 };

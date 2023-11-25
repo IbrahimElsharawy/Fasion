@@ -33,6 +33,10 @@ const CountDownTimer = () => {
     };
   }
 
+  if (timeRemaining === null) {
+    return <div>Countdown is over!</div>;
+  }
+
   return (
     <div className="grid grid-cols-4   gap-4">
       <div className="flex flex-col  items-center border border-1  border-custom-border-color px-6  ">
