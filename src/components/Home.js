@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import Products from "./products";
 import LookBook from "./LookBook";
 import FeaturedProducts from "./FeaturedProducts";
+import FollowUs from "./FollowUs";
 
 const Home = () => {
   const containerStyle = {
@@ -45,6 +46,9 @@ const Home = () => {
       </div>
       <div>
         <LookBook />
+      </div>
+      <div>
+        <FollowUs/>
       </div>
     </div>
   );
