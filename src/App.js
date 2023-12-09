@@ -1,13 +1,12 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Home/Navbar/Navbar";
 import {Routes , Route} from 'react-router-dom';
-import Home from "./components/Home";
-import Shop from "./components/Shop";
-import Features from "./components/Features";
-import Blog from "./components/Blog";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Products from "./components/products";
+import Home from "./components/Home/Home";
+import Shop from "./components/Shop/Shop";
+import Features from "./components/Features/Features";
+import Blog from "./components/Blog/Blog";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (

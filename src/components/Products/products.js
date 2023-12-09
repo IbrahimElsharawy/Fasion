@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CirclesWithBar } from "react-loader-spinner";
 import { NavLink } from "react-router-dom";
-import formatCurrency from "./FormatCurrency";
+import formatCurrency from "../FormatCurrency/FormatCurrency";
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -80,7 +80,9 @@ const Products = () => {
   return (
     <div className="max-w-[1240px] mx-auto my-10 py-10  ">
       <div className="mb-8">
-        <h1 className="text-2xl md:text-4xl text-center uppercase  ">lasted products</h1>
+        <h1 className="text-2xl md:text-4xl text-center uppercase  ">
+          lasted products
+        </h1>
         <div className="w-24 h-[2px] bg-black mx-auto mt-3  "></div>
       </div>
       <div>{loading ? <Loading /> : <ShowProducts />}</div>

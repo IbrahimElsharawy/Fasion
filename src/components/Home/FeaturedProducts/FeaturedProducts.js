@@ -2,10 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import bag from "../assets/item-1.jpg";
-import jacket from "../assets/item-2.jpg";
-import watch from "../assets/item-3.jpg";
-import short from "../assets/item-4.jpg";
+import bag from "../../../assets/item-1.jpg";
+import jacket from "../../../assets/item-2.jpg";
+import watch from "../../../assets/item-3.jpg";
+import short from "../../../assets/item-4.jpg";
 import { NavLink } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 

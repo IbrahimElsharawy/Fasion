@@ -1,11 +1,11 @@
 import React from "react";
 import { FaRegHeart } from "react-icons/fa";
 
-import photo1 from "../assets/photo1.jpg";
-import photo2 from "../assets/photo2.jpg";
-import photo3 from "../assets/photo3.jpg";
-import photo4 from "../assets/photo4.jpg";
-import photo5 from "../assets/photo5.jpg";
+import photo1 from "../../../assets/photo1.jpg";
+import photo2 from "../../../assets/photo2.jpg";
+import photo3 from "../../../assets/photo3.jpg";
+import photo4 from "../../../assets/photo4.jpg";
+import photo5 from "../../../assets/photo5.jpg";
 
 
 const FollowUs = () => {

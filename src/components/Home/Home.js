@@ -1,10 +1,10 @@
 import React from "react";
-import cover from "../assets/cover.jpg";
+import cover from "../../assets/cover.jpg";
 import { NavLink } from "react-router-dom";
-import Products from "./products";
-import LookBook from "./LookBook";
-import FeaturedProducts from "./FeaturedProducts";
-import FollowUs from "./FollowUs";
+import Products from "../Products/products";
+import LookBook from "./LookBook/LookBook";
+import FeaturedProducts from "./FeaturedProducts/FeaturedProducts";
+import FollowUs from "./FollowUs/FollowUs";
 
 const Home = () => {
   const containerStyle = {
@@ -48,7 +48,7 @@ const Home = () => {
         <LookBook />
       </div>
       <div>
-        <FollowUs/>
+        <FollowUs />
       </div>
     </div>
   );
