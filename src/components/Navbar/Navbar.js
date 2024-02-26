@@ -3,9 +3,13 @@ import { NavLink } from "react-router-dom";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { BiSolidUser } from "react-icons/bi";
 import { AiTwotoneShopping } from "react-icons/ai";
+import { useSelector } from "react-redux";
+
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const state=useSelector((state)=>state.handleCart)
+
 
   const handleClick = () => {
     setClick(!click);
@@ -108,7 +112,7 @@ const Navbar = () => {
           >
             <AiTwotoneShopping size={20} />
             <div className="absolute rounded-full px-2 text-white top-[-15px] right-[-10px] bg-black">
-              3
+            {state.length}
             </div>
           </NavLink>
           {/* Shopping cart */}

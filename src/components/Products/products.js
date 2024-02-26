@@ -5,13 +5,14 @@ import formatCurrency from "../FormatCurrency/FormatCurrency";
 
 const Products = () => {
   const [data, setData] = useState([]);
+
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const getProducts = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:5000/products");
+        const response = await fetch("http://localhost:3000/products");
         if (response.ok) {
           const data = await response.json();
           setData(data);
@@ -44,10 +45,11 @@ const Products = () => {
       </div>
     );
   };
+
   const ShowProducts = () => {
     return (
       <>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-2 ">
           {data.map((product) => {
             return (
               <div
@@ -64,7 +66,7 @@ const Products = () => {
                   <p className="my-4">{formatCurrency(product.price)}</p>
                 </div>
                 <NavLink
-                  to="#"
+                  to={`/products/${product.id}`}
                   className="flex flex-col justify-center items-center mx-auto  rounded py-2 font-medium border-2 border-black text-black capitalize hover:bg-black hover:text-white transition ease-in-out  duration-500"
                 >
                   buy now

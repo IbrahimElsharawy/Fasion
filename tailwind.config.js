@@ -16,6 +16,8 @@ module.exports = {
       },
       borderColor: {
         'custom-border-color': '#DBDBDB', 
+        'second-border-color':'#E65540'
+
       },
     },
   },

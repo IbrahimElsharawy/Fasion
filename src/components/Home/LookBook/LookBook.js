@@ -22,8 +22,8 @@ const LookBook = () => {
   return (
     <div className="bg-second-color">
       <div className="max-w-[1240px] mx-auto my-10 py-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2  gap-4">
-          <div className="relative w-full" style={bannerStyle}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 mx-2  gap-4">
+          <div className="relative w-full " style={bannerStyle}>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center text-white">
               <p className="capitalize tracking-widest text-xl md:text-2xl lg:text-3xl font-bold">
                 the beauty
