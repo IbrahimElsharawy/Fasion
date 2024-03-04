@@ -1,7 +1,7 @@
 import React from "react";
 import cover from "../../assets/cover.jpg";
 import { NavLink } from "react-router-dom";
-import Products from "../Products/products";
+import Products from "../Features/Features";
 import LookBook from "./LookBook/LookBook";
 import FeaturedProducts from "./FeaturedProducts/FeaturedProducts";
 import FollowUs from "./FollowUs/FollowUs";

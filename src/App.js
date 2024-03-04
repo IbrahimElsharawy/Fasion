@@ -10,6 +10,7 @@ import Blog from "./components/Blog/Blog";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Home/Footer/Footer";
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+
+      <ScrollToTop/>
     </div>
   );
 }

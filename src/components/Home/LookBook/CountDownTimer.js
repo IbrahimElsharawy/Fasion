@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from "react";
 
 const CountDownTimer = () => {
-  const targetDate = new Date("January 27, 2024 00:00:00").getTime();
+  const targetDate = new Date("March 24, 2024 00:00:00").getTime();
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTimeRemaining(calculateTimeRemaining());
+      const remainingTime = calculateTimeRemaining();
+      setTimeRemaining(remainingTime);
+
+      if (
+        remainingTime.days === 0 &&
+        remainingTime.hours === 0 &&
+        remainingTime.minutes === 0 &&
+        remainingTime.seconds === 0
+      ) {
+        clearInterval(intervalId);
+      }
     }, 1000);
 
     return () => {
@@ -45,14 +55,12 @@ const CountDownTimer = () => {
       </div>
       <div className="flex flex-col  items-center border border-1  border-custom-border-color px-6">
         <span>{timeRemaining.hours}</span>
-
         <span className="text-second-text-color">hrs</span>
       </div>
       <div className="flex flex-col  items-center border border-1  border-custom-border-color px-6">
         <span> {timeRemaining.minutes}</span>
         <span className="text-second-text-color">mins</span>
       </div>
-
       <div className="flex flex-col  items-center border border-1  border-custom-border-color px-6">
         <span>{timeRemaining.seconds}</span>
         <span className="text-second-text-color">secs</span>
