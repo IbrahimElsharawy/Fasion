@@ -18,8 +18,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-second-color">
-      <div className="max-w-[1240px] mx-auto mt-10 py-16">
+    <div className="bg-second-color   ">
+      <div className="max-w-[1240px] mx-auto mt-10 py-16 ">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-8 mx-2 ">
           <div>
             <h2 className="font-bold	">GET IN TOUCH</h2>

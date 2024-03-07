@@ -5,11 +5,9 @@ import { BiSolidUser } from "react-icons/bi";
 import { AiTwotoneShopping } from "react-icons/ai";
 import { useSelector } from "react-redux";
 
-
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const state=useSelector((state)=>state.handleCart)
-
+  const state = useSelector((state) => state.handleCart);
 
   const handleClick = () => {
     setClick(!click);
@@ -34,7 +32,7 @@ const Navbar = () => {
     };
   };
   return (
-    <div className="w-screen h-[80px]  top-0 bg-white shadow-md px-4">
+    <div className="w-screen h-[80px] sticky  z-20  top-0 bg-white shadow-md px-4">
       <div className="px-2 flex justify-between items-center w-full h-full max-w-[1240px] mx-auto">
         <NavLink
           to="/"
@@ -112,7 +110,7 @@ const Navbar = () => {
           >
             <AiTwotoneShopping size={20} />
             <div className="absolute rounded-full px-2 text-white top-[-15px] right-[-10px] bg-black">
-            {state.length}
+              {state.length}
             </div>
           </NavLink>
           {/* Shopping cart */}
