@@ -1,35 +1,35 @@
-import React from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-import placeholderIcon from "../../assets/placeholder.png";
+import React, { useState } from "react";
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
-const icon = L.icon({
-  iconUrl: placeholderIcon,
-  iconSize: [26, 26],
-});
+const Maps = (props) => {
+  const [selectedPlace, setSelectedPlace] = useState({ name: '' });
 
-function Maps() {
-  const position = [51.505, -0.09];
+  const onMarkerClick = (props, marker, e) => {
+    setSelectedPlace({ name: props.name });
+  };
+
+  const onInfoWindowClose = () => {
+    setSelectedPlace({ name: '' });
+  };
 
   return (
-    <MapContainer
-      center={position}
-      zoom={13}
-      scrollWheelZoom={false}
-      style={{ height: "100%", width: "100%" }}
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=pcbs2XKXN61R3gzH3iPC"
-      />
-      <Marker position={position} icon={icon}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
-      </Marker>
-    </MapContainer>
+    <div >
+      <Map
+        google={props.google}
+        zoom={14}
+       
+      >
+        <Marker onClick={onMarkerClick} name={'Current location'} />
+        <InfoWindow onClose={onInfoWindowClose}>
+          <div className="bg-white p-2 rounded-md shadow-md">
+            <h1 className="text-lg font-semibold">{selectedPlace.name}</h1>
+          </div>
+        </InfoWindow>
+      </Map>
+    </div>
   );
 }
 
-export default Maps;
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyCuTilAfnGfkZtIx0T3qf-eOmWZ_N2LpoY" 
+})(Maps);
