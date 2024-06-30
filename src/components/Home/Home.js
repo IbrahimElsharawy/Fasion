@@ -31,7 +31,7 @@ const Home = () => {
             </h1>
             <NavLink
               className="border py-2 px-4 rounded-3xl	uppercase transition-all duration-300 hover:bg-custom-color hover:text-white"
-              to="/"
+              to="/Features"
             >
               Shop now
             </NavLink>

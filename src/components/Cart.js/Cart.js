@@ -61,7 +61,7 @@ const Cart = () => {
 
   const emptyCart = () => {
     return (
-      <div className=" bg-slate-50	rounded relative -z-10 py-5 my-5 h-[200px]  ">
+      <div className=" bg-slate-50	rounded relative -z-10 py-5 my-5 h-[250px]  ">
         <div className="py-4">
           <div>
             <h3 className="text-base md:text-2xl lg:text-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center">

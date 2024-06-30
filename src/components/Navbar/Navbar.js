@@ -49,14 +49,7 @@ const Navbar = () => {
           >
             Home
           </NavLink>
-          <NavLink
-            style={navlinkStyles}
-            className="px-4"
-            to="/shop"
-            onClick={handleClose}
-          >
-            Shop
-          </NavLink>
+         
           <NavLink
             style={navlinkStyles}
             className="px-4"
