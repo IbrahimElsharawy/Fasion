@@ -112,7 +112,7 @@ const Navbar = () => {
       <div
         className={
           click
-            ? "absolute left-0 bg-white w-full px-8 flex flex-col"
+            ? "absolute left-0 bg-white w-full  px-8 flex flex-col"
             : "hidden"
         }
       >
